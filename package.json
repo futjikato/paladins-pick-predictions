@@ -1,0 +1,29 @@
+{
+  "name": "paladins-pick-prediction",
+  "version": "0.0.1",
+  "description": "Application to predict paladin predictions",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "Paladins",
+    "game",
+    "prediction",
+    "machine-learning",
+    "neural-network"
+  ],
+  "author": "Moritz Spindelhirn <m.spindelhirn@cashiers-check.de>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "synaptic": "^1.0.8"
+  }
+}

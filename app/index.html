@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paladins Pick Prediction</title>
+
+    <link href="css/main.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>Pick Predictions</h1>
+    </header>
+    <section class="TrainingData">
+        <h2>Data</h2>
+        <div>
+            <input type="file" class="TrainingData-File">
+            <ol class="TrainingData-Inserted">
+
+            </ol>
+            <button class="TrainingData-Add">Add data</button>
+            <button class="TrainingData-Clean">Clean</button>
+        </div>
+    </section>
+    <section class="Prediction">
+        <h2>Prediction</h2>
+        <div class="Prediction-TeamContainer">
+            <div class="Prediction-Team Prediction-Left">
+                <div class="Prediction-Slot">
+                    <select class="js-pred-in-l0">
+                        <option value="-">Not selected</option>
+                        <option value="0">Androxus</option>
+                        <option value="1">Barik</option>
+                        <option value="2">Bomb King</option>
+                        <option value="3">Buck</option>
+                        <option value="4">Cassie</option>
+                        <option value="5">Drogoz</option>
+                        <option value="6">Evie</option>
+                        <option value="7">Fernando</option>
+                        <option value="8">Grohk</option>
+                        <option value="9">Grover</option>
+                        <option value="10">Kinessa</option>
+                        <option value="11">Makoa</option>
+                        <option value="12">Mal'Damba</option>
+                        <option value="13">Pip</option>
+                        <option value="14">Ruckus</option>
+                        <option value="15">Sha Lin</option>
+                        <option value="16">Skye</option>
+                        <option value="17">Viktor</option>
+                        <option value="18">Ying</option>
+                    </select>
+                    <span class="Prediction-Output js-pred-out-l0"></span>
+                </div>
+                <div class="Prediction-Slot">
+                    <select class="js-pred-in-l1">
+                        <option value="-">Not selected</option>
+                        <option value="0">Androxus</option>
+                        <option value="1">Barik</option>
+                        <option value="2">Bomb King</option>
+                        <option value="3">Buck</option>
+                        <option value="4">Cassie</option>
+                        <option value="5">Drogoz</option>
+                        <option value="6">Evie</option>
+                        <option value="7">Fernando</option>
+                        <option value="8">Grohk</option>
+                        <option value="9">Grover</option>
+                        <option value="10">Kinessa</option>
+                        <option value="11">Makoa</option>
+                        <option value="12">Mal'Damba</option>
+                        <option value="13">Pip</option>
+                        <option value="14">Ruckus</option>
+                        <option value="15">Sha Lin</option>
+                        <option value="16">Skye</option>
+                        <option value="17">Viktor</option>
+                        <option value="18">Ying</option>
+                    </select>
+                    <span class="Prediction-Output js-pred-out-l1"></span>
+                </div>
+                <div class="Prediction-Slot">
+                    <select class="js-pred-in-l2">
+                        <option value="-">Not selected</option>
+                        <option value="0">Androxus</option>
+                        <option value="1">Barik</option>
+                        <option value="2">Bomb King</option>
+                        <option value="3">Buck</option>
+                        <option value="4">Cassie</option>
+                        <option value="5">Drogoz</option>
+                        <option value="6">Evie</option>
+                        <option value="7">Fernando</option>
+                        <option value="8">Grohk</option>
+                        <option value="9">Grover</option>
+                        <option value="10">Kinessa</option>
+                        <option value="11">Makoa</option>
+                        <option value="12">Mal'Damba</option>
+                        <option value="13">Pip</option>
+                        <option value="14">Ruckus</option>
+                        <option value="15">Sha Lin</option>
+                        <option value="16">Skye</option>
+                        <option value="17">Viktor</option>
+                        <option value="18">Ying</option>
+                    </select>
+                    <span class="Prediction-Output js-pred-out-l2"></span>
+                </div>
+                <div class="Prediction-Slot">
+                    <select class="js-pred-in-l3">
+                        <option value="-">Not selected</option>
+                        <option value="0">Androxus</option>
+                        <option value="1">Barik</option>
+                        <option value="2">Bomb King</option>
+                        <option value="3">Buck</option>
+                        <option value="4">Cassie</option>
+                        <option value="5">Drogoz</option>
+                        <option value="6">Evie</option>
+                        <option value="7">Fernando</option>
+                        <option value="8">Grohk</option>
+                        <option value="9">Grover</option>
+                        <option value="10">Kinessa</option>
+                        <option value="11">Makoa</option>
+                        <option value="12">Mal'Damba</option>
+                        <option value="13">Pip</option>
+                        <option value="14">Ruckus</option>
+                        <option value="15">Sha Lin</option>
+                        <option value="16">Skye</option>
+                        <option value="17">Viktor</option>
+                        <option value="18">Ying</option>
+                    </select>
+                    <span class="Prediction-Output js-pred-out-l3"></span>
+                </div>
+                <div class="Prediction-Slot">
+                    <select class="js-pred-in-l4">
+                        <option value="-">Not selected</option>
+                        <option value="0">Androxus</option>
+                        <option value="1">Barik</option>
+                        <option value="2">Bomb King</option>
+                        <option value="3">Buck</option>
+                        <option value="4">Cassie</option>
+                        <option value="5">Drogoz</option>
+                        <option value="6">Evie</option>
+                        <option value="7">Fernando</option>
+                        <option value="8">Grohk</option>
+                        <option value="9">Grover</option>
+                        <option value="10">Kinessa</option>
+                        <option value="11">Makoa</option>
+                        <option value="12">Mal'Damba</option>
+                        <option value="13">Pip</option>
+                        <option value="14">Ruckus</option>
+                        <option value="15">Sha Lin</option>
+                        <option value="16">Skye</option>
+                        <option value="17">Viktor</option>
+                        <option value="18">Ying</option>
+                    </select>
+                    <span class="Prediction-Output js-pred-out-l4"></span>
+                </div>
+            </div>
+            <div class="Prediction-Team Prediction-Right">
+                <div class="Prediction-Slot">
+                    <select class="js-pred-in-r0">
+                        <option value="-">Not selected</option>
+                        <option value="0">Androxus</option>
+                        <option value="1">Barik</option>
+                        <option value="2">Bomb King</option>
+                        <option value="3">Buck</option>
+                        <option value="4">Cassie</option>
+                        <option value="5">Drogoz</option>
+                        <option value="6">Evie</option>
+                        <option value="7">Fernando</option>
+                        <option value="8">Grohk</option>
+                        <option value="9">Grover</option>
+                        <option value="10">Kinessa</option>
+                        <option value="11">Makoa</option>
+                        <option value="12">Mal'Damba</option>
+                        <option value="13">Pip</option>
+                        <option value="14">Ruckus</option>
+                        <option value="15">Sha Lin</option>
+                        <option value="16">Skye</option>
+                        <option value="17">Viktor</option>
+                        <option value="18">Ying</option>
+                    </select>
+                    <span class="Prediction-Output js-pred-out-r0"></span>
+                </div>
+                <div class="Prediction-Slot">
+                    <select class="js-pred-in-r1">
+                        <option value="-">Not selected</option>
+                        <option value="0">Androxus</option>
+                        <option value="1">Barik</option>
+                        <option value="2">Bomb King</option>
+                        <option value="3">Buck</option>
+                        <option value="4">Cassie</option>
+                        <option value="5">Drogoz</option>
+                        <option value="6">Evie</option>
+                        <option value="7">Fernando</option>
+                        <option value="8">Grohk</option>
+                        <option value="9">Grover</option>
+                        <option value="10">Kinessa</option>
+                        <option value="11">Makoa</option>
+                        <option value="12">Mal'Damba</option>
+                        <option value="13">Pip</option>
+                        <option value="14">Ruckus</option>
+                        <option value="15">Sha Lin</option>
+                        <option value="16">Skye</option>
+                        <option value="17">Viktor</option>
+                        <option value="18">Ying</option>
+                    </select>
+                    <span class="Prediction-Output js-pred-out-r1"></span>
+                </div>
+                <div class="Prediction-Slot">
+                    <select class="js-pred-in-r2">
+                        <option value="-">Not selected</option>
+                        <option value="0">Androxus</option>
+                        <option value="1">Barik</option>
+                        <option value="2">Bomb King</option>
+                        <option value="3">Buck</option>
+                        <option value="4">Cassie</option>
+                        <option value="5">Drogoz</option>
+                        <option value="6">Evie</option>
+                        <option value="7">Fernando</option>
+                        <option value="8">Grohk</option>
+                        <option value="9">Grover</option>
+                        <option value="10">Kinessa</option>
+                        <option value="11">Makoa</option>
+                        <option value="12">Mal'Damba</option>
+                        <option value="13">Pip</option>
+                        <option value="14">Ruckus</option>
+                        <option value="15">Sha Lin</option>
+                        <option value="16">Skye</option>
+                        <option value="17">Viktor</option>
+                        <option value="18">Ying</option>
+                    </select>
+                    <span class="Prediction-Output js-pred-out-r2"></span>
+                </div>
+                <div class="Prediction-Slot">
+                    <select class="js-pred-in-r3">
+                        <option value="-">Not selected</option>
+                        <option value="0">Androxus</option>
+                        <option value="1">Barik</option>
+                        <option value="2">Bomb King</option>
+                        <option value="3">Buck</option>
+                        <option value="4">Cassie</option>
+                        <option value="5">Drogoz</option>
+                        <option value="6">Evie</option>
+                        <option value="7">Fernando</option>
+                        <option value="8">Grohk</option>
+                        <option value="9">Grover</option>
+                        <option value="10">Kinessa</option>
+                        <option value="11">Makoa</option>
+                        <option value="12">Mal'Damba</option>
+                        <option value="13">Pip</option>
+                        <option value="14">Ruckus</option>
+                        <option value="15">Sha Lin</option>
+                        <option value="16">Skye</option>
+                        <option value="17">Viktor</option>
+                        <option value="18">Ying</option>
+                    </select>
+                    <span class="Prediction-Output js-pred-out-r3"></span>
+                </div>
+                <div class="Prediction-Slot">
+                    <select class="js-pred-in-r4">
+                        <option value="-">Not selected</option>
+                        <option value="0">Androxus</option>
+                        <option value="1">Barik</option>
+                        <option value="2">Bomb King</option>
+                        <option value="3">Buck</option>
+                        <option value="4">Cassie</option>
+                        <option value="5">Drogoz</option>
+                        <option value="6">Evie</option>
+                        <option value="7">Fernando</option>
+                        <option value="8">Grohk</option>
+                        <option value="9">Grover</option>
+                        <option value="10">Kinessa</option>
+                        <option value="11">Makoa</option>
+                        <option value="12">Mal'Damba</option>
+                        <option value="13">Pip</option>
+                        <option value="14">Ruckus</option>
+                        <option value="15">Sha Lin</option>
+                        <option value="16">Skye</option>
+                        <option value="17">Viktor</option>
+                        <option value="18">Ying</option>
+                    </select>
+                    <span class="Prediction-Output js-pred-out-r4"></span>
+                </div>
+            </div>
+        </div>
+        <button class="Prediction-Predict">Predict</button>
+    </section>
+
+    <script type="application/javascript" src="js/trainingdata.js"></script>
+    <script type="application/javascript" src="js/prediction.js"></script>
+</body>
+</html>

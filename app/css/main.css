@@ -1,0 +1,16 @@
+h1, h2, h3 {
+  font-family: Helvetica, sans-serif; }
+
+.TrainingData {
+  margin: 0 0 2em; }
+
+.Prediction .Prediction-TeamContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.Prediction .Prediction-Team {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
