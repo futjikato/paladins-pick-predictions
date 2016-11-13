@@ -1,0 +1,22 @@
+{
+  "name": "paladins-pick-prediction",
+  "description": "Application to predict paladin predictions",
+  "main": "main.js",
+  "authors": [
+    "Moritz Spindelhirn <m.spindelhirn@cashiers-check.de>"
+  ],
+  "license": "CC0-1.0",
+  "keywords": [
+    "Paladins",
+    "game",
+    "prediction",
+    "machine-learning",
+    "neural-network"
+  ],
+  "homepage": "https://github.com/futjikato/paladins-pick-predictions",
+  "private": true,
+  "dependencies": {
+    "foundation-sites": "^6.2.4",
+    "motion-ui": "^1.2.2"
+  }
+}

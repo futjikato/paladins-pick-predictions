@@ -1,3 +1,8 @@
+@import "../bower_components/foundation-sites/scss/foundation";
+@import "../bower_components/motion-ui/motion-ui";
+
+@include foundation-everything(true);
+
 @import "variables";
 @import "base";
 @import "components/index";

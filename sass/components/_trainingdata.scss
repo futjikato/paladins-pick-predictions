@@ -1,3 +1,11 @@
 .TrainingData {
   margin: 0 0 2em;
+
+  .TrainingData-Inserted {
+    list-style-type: none;
+  }
+
+  .TrainingData-ListPlaceholder {
+    color: #668;
+  }
 }

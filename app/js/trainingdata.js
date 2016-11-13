@@ -1,11 +1,11 @@
-((require, document, FileReader) => {
+((require, $, FileReader) => {
   'use strict';
 
   const {ipcRenderer} = require('electron');
   const trainingInput = document.querySelector('.TrainingData-File');
   const trainingAdd = document.querySelector('.TrainingData-Add');
-  const trainingClean = document.querySelector('.TrainingData-Clean');
-  const trainingList = document.querySelector('.TrainingData-Inserted');
+  const trainingClean = $('.js-training-clean');
+  const trainingList = $('.js-training-list');
   const reader = new FileReader();
   console.log(reader);
 
@@ -28,17 +28,17 @@
     reader.readAsText(file, 'utf-8');
   });
 
-  trainingClean.addEventListener('click', () => {
-    trainingList.childNodes.forEach((child) => {
+  trainingClean.on('trainingdata.click', () => {
+    trainingList.children(':not(.js-training-placeholder)').each((child) => {
       child.remove();
     });
     ipcRenderer.send('trainingdata-clear', {});
   });
 
   ipcRenderer.on('trainingdata-update', (event, data) => {
-    let listEl = document.createElement('li');
-    listEl.textContent = data.name;
-    trainingList.appendChild(listEl);
+    let listEl = $('<li>');
+    listEl.text(data.name);
+    trainingList.append(listEl);
   });
   //
-})(require, document, FileReader);
+})(require, jQuery, FileReader);

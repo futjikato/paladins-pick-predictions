@@ -6,7 +6,7 @@
 
     <link href="css/main.css" rel="stylesheet"/>
 </head>
-<body>
+<body class="column">
     <header>
         <h1>Pick Predictions</h1>
     </header>
@@ -14,17 +14,18 @@
         <h2>Data</h2>
         <div>
             <input type="file" class="TrainingData-File">
-            <ol class="TrainingData-Inserted">
-
+            <ol class="TrainingData-Inserted js-training-list">
+                <li class="TrainingData-ListPlaceholder js-training-placeholder">No training is currently set</li>
             </ol>
-            <button class="TrainingData-Add">Add data</button>
-            <button class="TrainingData-Clean">Clean</button>
+            <button class="button TrainingData-Add">Add data</button>
+            <button class="button alert js-training-clean">Clean</button>
         </div>
     </section>
     <section class="Prediction">
         <h2>Prediction</h2>
-        <div class="Prediction-TeamContainer">
-            <div class="Prediction-Team Prediction-Left">
+        <div class="Prediction-TeamContainer row">
+            <div class="Prediction-Team Prediction-Left column">
+                <h3>Team A</h3>
                 <div class="Prediction-Slot">
                     <select class="js-pred-in-l0">
                         <option value="-">Not selected</option>
@@ -151,7 +152,8 @@
                     <span class="Prediction-Output js-pred-out-l4"></span>
                 </div>
             </div>
-            <div class="Prediction-Team Prediction-Right">
+            <div class="Prediction-Team Prediction-Right column">
+                <h3>Team B</h3>
                 <div class="Prediction-Slot">
                     <select class="js-pred-in-r0">
                         <option value="-">Not selected</option>
@@ -279,9 +281,10 @@
                 </div>
             </div>
         </div>
-        <button class="Prediction-Predict">Predict</button>
+        <button class="button Prediction-Predict">Predict</button>
     </section>
 
+    <script type="application/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script type="application/javascript" src="js/trainingdata.js"></script>
     <script type="application/javascript" src="js/prediction.js"></script>
 </body>
